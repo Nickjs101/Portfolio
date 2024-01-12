@@ -1,0 +1,84 @@
+body{
+    background-color: #FFFBF5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;   
+}
+.Header{
+    background-color: rgba(249, 249, 249, 0.971);
+    padding: 20px 12px;
+    text-align: right;
+}
+.Header a{
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 10px 20px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+    
+}
+.Header a:hover{
+    color: #7743DB;
+    border-color: #7743DB;
+}
+.body{
+    float: left;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+h1{
+    
+    margin: 5px 0;
+}
+p{
+    font-size: 20px;
+    width: 40%;
+}
+img{
+    position: absolute;
+    right: 100px;
+    top: 20%;
+}
+button{
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid;
+    background-color: #7743DB;
+    color: #FFFBF5;
+}
+.Message-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+form{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #a8a8a8;
+    width: 300px;
+}
+label{
+    display: block;
+    margin-bottom: 8px;
+}
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+}
+#submit{
+    background-color: rgb(0, 224, 149);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: rgb(0, 153, 102);
+}
