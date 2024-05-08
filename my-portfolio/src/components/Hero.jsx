@@ -5,12 +5,12 @@ import {TypeAnimation} from 'react-type-animation'
 
 const Hero = () => {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] h-[70vh] mx-auto py-8 bg-black'>
-        <div className='cols-span-1 my-auto mx-auto w-[300px] h-auto lg:w-[400px]'>
+    <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 bg-black'>
+        <div className='col-span-1 my-auto mx-auto h-auto w-[200px] lg:w-[200px]'>
             <img src={heroimage} alt='Hero Image'/>
         </div>
-        <div className='cols-span-2 w-full px-5 my-auto'>
-            <hi className='text-white text-4xl sm:text-5xl lg:text-8xl font-extrabold'>
+        <div className='col-span-2 px-5 my-auto'>
+            <hi className='text-white text-4xl sm:text-5xl lg:text-7xl font-extrabold'>
                 <span className='primary-color'>
                     I'm a
                 </span> <br/>
@@ -30,7 +30,7 @@ const Hero = () => {
                 <a href="/" className='px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-orange-400 to-purple-300 text-white' >
                     Download CV
                 </a>
-                <a href="/" className='px-6 py-3 w-full rounded-xl mr-4 border border-gray-400 hover:bg-gradient-to-br from-orange-400 to-purple-300 text-white hover:border-none'>
+                <a href="/" className='px-6 py-3 w-full rounded-xl border border-gray-400 hover:bg-gradient-to-br from-orange-400 to-purple-300 text-white hover:border-none'>
                     Contact
                 </a>
             </div>
