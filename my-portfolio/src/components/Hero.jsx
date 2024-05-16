@@ -30,7 +30,7 @@ const Hero = () => {
                 <a href="/" className='px-6 py-3 w-full rounded-xl mr-4 bg-primary-color text-white' >
                     Download CV
                 </a>
-                <a href="/" className='px-6 py-3 w-full rounded-xl border border-gray-400 hover:bg-gradient-to-br from-orange-400 to-purple-300 text-white hover:border-none'>
+                <a href="/" className='px-6 py-3 w-full rounded-xl border border-[#9fef00] hover:bg-[#9fef00] text-white hover:border-none'>
                     Contact
                 </a>
             </div>
