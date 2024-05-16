@@ -5,7 +5,7 @@ import {TypeAnimation} from 'react-type-animation'
 
 const Hero = () => {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 bg-black'>
+    <div className='bg-secondary-color grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 '>
         <div className='col-span-1 my-auto mx-auto h-auto w-[200px] lg:w-[200px]'>
             <img src={heroimage} alt='Hero Image'/>
         </div>
@@ -27,7 +27,7 @@ const Hero = () => {
             </p>
 
             <div className='my-8'>
-                <a href="/" className='px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-orange-400 to-purple-300 text-white' >
+                <a href="/" className='px-6 py-3 w-full rounded-xl mr-4 bg-primary-color text-white' >
                     Download CV
                 </a>
                 <a href="/" className='px-6 py-3 w-full rounded-xl border border-gray-400 hover:bg-gradient-to-br from-orange-400 to-purple-300 text-white hover:border-none'>
