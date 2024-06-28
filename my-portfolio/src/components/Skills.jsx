@@ -9,7 +9,7 @@ import python from '../assets/python.png'
 
 const Skills = () => {
   return (
-    <div className='bg-secondary-color border border-gray-600 text-gray-50 md:h-[150px] max-w-[1200px] mx-auto grid grid-cols-3
+    <div id='Skills' className='bg-secondary-color border border-gray-600 text-gray-50 md:h-[150px] max-w-[1200px] mx-auto grid grid-cols-3
                     place-items-center md:flex md:justify-between md:items-center'>
         
         <h2 className='text-gray-700 text-2xl md:text-4xl font-bold m-4'>

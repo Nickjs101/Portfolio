@@ -8,13 +8,24 @@ const Navbar = () => {
         setNav(!nav)
     }
 
+    const gotoSection= (id) => {
+        const section = document.getElementById(id);
+        if(section){
+            section.scrollIntoView({behavior: 'smooth'});
+        }
+    }
+
   return (
+    <div className='sticky top-0 left-0 w-full z-50'>
     <div className='bg-secondary-color text-gray-400 h-[100px] max-w-[1200px] mx-auto flex justify-between items-center'>
-            <h1 className='text-3xl font-bold primary-color ml-4'>Nick.js</h1>
+            <h1 className='text-3xl font-bold primary-color ml-4'>Nick.Js</h1>
             <ul className='hidden md:flex'>
-                <li className='p-5'><a href="#about">About</a></li>
-                <li className='p-5'><a href="#work">Work</a></li>
-                <li className='p-5'><a href="#contact">Contact</a></li>
+                <li className='p-5' onClick={() => gotoSection('Home')}><a href="#Home">Home</a></li>
+                <li className='p-5' onClick={() => gotoSection('Skills')}><a href="#Skills">Skills</a></li>
+                <li className='p-5' onClick={() => gotoSection('Certifications')}><a href="#Certifications">Certifications</a></li>
+                <li className='p-5' onClick={() => gotoSection('about')}><a href="#about">About</a></li>
+                <li className='p-5' onClick={() => gotoSection('work')}><a href="#work">Work</a></li>
+                <li className='p-5' onClick={() => gotoSection('contact')}><a href="#contact">Contact</a></li>
             </ul>
             
             <div onClick={handleNav} className='block md:hidden mr-6'>
@@ -22,13 +33,17 @@ const Navbar = () => {
             </div>
 
             <div className={nav ? 'z-10 fixed h-full left-0 top-0 w-[60%] bg-[#202121] ease-in-out duration-500' : 'fixed left-[-100%]'}>
-                <h1 className='text-3xl font-bold primary-color ml-6 mt-6'>Nick.js</h1>
+                <h1 className='text-3xl font-bold primary-color ml-6 mt-6'>Nick.Js</h1>
                 <ul className='p-8 text-2xl'>
-                    <li className='p-2'><a href="#about">About</a></li>
-                    <li className='p-2'><a href="#work">Work</a></li>
-                    <li className='p-2'><a href="#contact">Contact</a></li>
+                <li className='p-2' onClick={gotoSection('Home')}><a href="#about">Home</a></li>
+                <li className='p-2' onClick={gotoSection('Skills')}><a href="#about">Skills</a></li>
+                <li className='p-2' onClick={gotoSection('Certifications')}><a href="#about">Certifications</a></li>
+                <li className='p-2' onClick={gotoSection('about')}><a href="#about">About</a></li>
+                <li className='p-2' onClick={gotoSection('contact')}><a href="#work">Work</a></li>
+                <li className='p-2' onClick={gotoSection('work')}><a href="#contact">Contact</a></li>
                 </ul>
             </div>
+    </div>
     </div>
   )
 }

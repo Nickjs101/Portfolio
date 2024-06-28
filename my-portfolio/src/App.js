@@ -5,6 +5,7 @@ import About from "./components/About";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Certs from "./components/Certs";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <Skills/>
+      <Certs/>
       <About/>
       <Work/>
       <Contact/>

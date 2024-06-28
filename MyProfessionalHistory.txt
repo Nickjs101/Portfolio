@@ -1,0 +1,95 @@
+Name: Nick Joshua Montemayor
+Address: Angeles City, Pampanga
+Contact#: +639949320841
+Email: nickjoshuamontemayor0121@gmail.com
+LinkedIn : www.linkedin.com/in/nickjmont
+
+EXPERIENCE:
+
+Company: SYLLABUS Inc. (STI College-Angeles)
+Date: Aug 2023 - Jun 2024
+Position: IT Instructor
+The Courses I Teach:
+Computer Programming1 - I teach Grade 11 Students how to create a static websites using HTML 
+and CSS. We created a hands-on web portfolio for their own
+Computer Programming2 - I teach Grade 12 Students javascript programming language to be used in their website. We created a hands-on web projects that include javascript. I also guide them in creating their portfolio with javascript.
+Computer Graphics - I teach 4th year IT students the basic of python and use python with pyOpenGL library to create stunning shapes and graphics from scratch. At the end of the course, we created a landscape that can be controlled using inputs.
+Game Development - I teach 4th year IT students how to use Unity platform to create 2D and 3D games. In this course, I teach them how to create 2D games and modify 3D games.
+Human Computer Interaction - I teach 2nd year IT students about principles and other elements that will help them develop applications while considering user experience and user interface of their applications. I make them ready in their journey as a developer.
+Introduction to Computing - In this course I teach 1st year students about history of computing, current computing technologies, and the future of computing.
+Introduction to Multimedia Arts - This course is about principles of design and how to create traditional and digital arts. at the end of the course, we tackle different technologies around multimedia arts.
+Advance Database - In this course, I teach 3rd year IT students advance database concepts like recursive queries, Common Table Expressions, Indexes, Transaction and Concurrency Controls, and T-SQL. In this course we use MS SQL with SQL Server Management Studio (SSMS). I also teach them how to use Mongodb(no-SQL database) using command line 
+ 
+Basic Computer Technology & Computer Hardware Fundamentals - These two courses I Teach to Grade 11 students. This courses are all about introduction to computer like how computer works, how cpu works, basic computer process. And in this course, I give them hands-on experience on how to build and disassemble a pc. I also teach them how to troubleshoot a computer that can enhance their problem solving abilities.
+Broadband Technology - I teach grade12 students what their need to learn about networks. I teach them how to create a radio, a Crossover cable, and straight through cable. I also teach them about antenna's and broadband technologies.
+Computer Productivity Tools - This course is the challenging course because my students here are not technical people or students that has no computer experience. I teach them basic and advance use of Microsoft word and excel. I also teach them about Data Science. At the end of the course I teach them how to create a Report using PowerBI
+Mobile App Programming1 & Mobile Systems and Technologies - These two course I teach to Grade11 students and 3rd year IT. This course is about developing mobile app with android studio and The language we use here is JAVA and XML. In this course I give them hands-on experience on building and Designing a mobile app with Database. I teach them how to create a mobile app with the use of SQLite as database and I also teach them basic SQL language.
+System Administration and Maintenance - In this course, I teach 1st Year IT students on how to Administer and Maintain a Linux System. I teach them about Packages, Distributions, Networks, Processes and bash scripting.
+- During mywork at the company I also organized event for mobile development competition.
+
+Company: Fusion Manpower (Jollibee)
+Date: Jul 2019 - Sep 2019
+Position: Service Crew
+Tasks:
+- I Serve people food
+- I listen to customers needs making sure that they are satisfied with the service
+- I also clean the store making sure that the store is clean before leaving
+- I also work as a cook in the backup station. I cook ingredients used in the meals like pasta, sauces, hotdogs, and soups. I work at this station under high pressure because I am solo at the station and my station is important to make sure that all orders are serve on time. With limited resources, I cook multiple ingredients and making sure that the important ingredients are always first. With the help of my organization and time management skill I solve every challenges at the stations 
+
+Company: PC Bytes
+Date: Oct 2018 - Dec 2018
+Position: IT Technician
+Tasks: 
+- I Build computers for clients
+- I troubleshoot client computers
+- I installed OS and Applications on the clients computers
+- Creating Lan Cables for their internet connections
+- during working at the company, I experience single handedly design the clients networks with the use of cables, switch, and router. We deploy computers at the clients place. with my supervisor, we travel to clients to fix their computers.
+
+OTHER EXPERIENCE: (What I did in my free time at home and other places)
+
+- With my free time at home, my family and neighbors seek help to me with their problem on their WIFI like fixing connection and resetting the routers. I also fix simple mobile phone problems. 
+- They also want seek help to fix their computer problems like reinstalling OS, troubleshooting problems, installing applications, setting up their network cables
+- I got experience in setting up a fibre optic cables of our neighbors network
+- At work, they seek help by asking recommendation and ideas on how to improve their computer's performance or fixing computer problems.
+
+EDUCATION: (What I did in school during my college)
+
+School: STI College-Angeles
+Program: Bachelor of Science in Information Technology
+Year: 2019 - 2023
+College Summary:
+- In my college years, We focus on learning how to developed desktop applications with tools like NetBeans for JAVA and Visual Studio for C#. We are trained to JAVA and C# from basic to advance and OOP concepts. We also have networking courses that include different network technology and we earned certification for cloud computing of Huawei Certified ICT Associate (HCIA). in terms of tools and technology, We learn Android Studio with JAVA, Game Development with C#, Web Development with JS,CSS, and HTML.
+- During my 3rd year College, June 2022 I joined and win in the Coding Competition of STI College. The Competition goes around solving OOP Problem and every can use their preferred programming language. As I am comfortable with C# in applying OOP, I use it to win the competition.
+- I also became a President of ICT organization named Tech Matrix with over 200 members
+- I am one of the representative of the whole STI in the Huawei ICT Competition 2022-2023 Asia Pacific - Philippines Cloud Track in Oct 2022. Compete with 23 Universities across the country and got into top 10 schools and advance into national Finals where we demonstrate our understanding and skills in designing, implementing and managing cloud solutions using Huawei Cloud. 
+
+PROJECTS:
+
+Capstone Project Named: Kody's Adventure
+Description: I Developed a 2D side-scrolling game inspired by MARIO that teaches basic python programming to everyone who wants to learn programming
+Platform: Unity
+Language used: C#
+Language Teach: Python
+
+Telegram Bots
+Description: I created a Telegram AI Chatbot that tracks financials information in the crypto space.
+Tools: TelegramBot API, python programming language, SQLITE3 for database
+
+Online Guidance Counselling System
+Description: It is a Website dedicated to help digitalized Guidance Counselor's tasks that includes: Monitoring, Messaging, Users Management, Report Generation, Creating database backups and notifications. I contribute to this project my fixing bugs and other features of the Website that tool me 2 Weeks to finish.
+Tools: 
+MySQL for database,
+JQUERY & JavaScript for functions,
+PHP for backend processing 
+HTML, CSS, Bootstrap for Front-End
+
+Trade Monitoring Mobile App
+Description: I created a Mobile App for my trading journey that tracked my trades and calculating risks. 
+Feature: I integrated it with line graph that display if my trades are going negative or positive.
+Tools:
+Java programming language
+XML for App design
+SQLITE for database
+
+
