@@ -35,7 +35,7 @@ const Certs = () => {
   };
 
   return (
-    <div id='Certifications' className='max-w-[1200px] mx-auto my-12'>
+    <div id='Certifications' className='max-w-[1200px] mx-auto my-12 pt-[100px] md:pt-[80px]'>
       <div className='md:grid md:grid-cols-2 sm:py-16'>
         <h2 className='text-4xl md:text-5xl font-bold mb-8 col-span-2 text-center text-[#9fef00]'>Certifications</h2>
         <div className='hidden md:block'>

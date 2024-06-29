@@ -5,7 +5,10 @@ import {TypeAnimation} from 'react-type-animation'
 
 const Hero = () => {
   return (
-    <div id='Home' className='bg-secondary-color grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 '>
+    <div id='Home' className='bg-secondary-color grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 pt-[80px] md:pt-[100px]'>
+        <div className='col-span-1 my-auto mx-auto h-auto w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px] bg-[#0b121f] rounded-[50%] shadow-lg shadow-[#9fef00be]'>
+            <img className='rounded-[50%]' src={heroimage} alt='Hero Image'/>
+        </div>
         <div className='col-span-2 px-5 my-auto'>
             <hi className='text-white text-4xl sm:text-5xl lg:text-7xl font-extrabold'>
                 <span className='primary-color'>
@@ -32,9 +35,6 @@ const Hero = () => {
                     Contact
                 </a>
             </div>
-        </div>
-        <div className='col-span-1 my-auto mx-auto h-auto w-[200px] lg:w-[400px] bg-[#0b121f] rounded-[50%] shadow-lg shadow-[#9fef00be]'>
-            <img className='rounded-[50%]' src={heroimage} alt='Hero Image'/>
         </div>
     </div>
   )

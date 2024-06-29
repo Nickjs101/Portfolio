@@ -7,10 +7,10 @@ import proj5 from '../assets/Works/Work5.png'
 
 const Work = () => {
   return (
-    <div className='max-w-[1200px] mx-auto p-5' id='work'>
+    <div className='max-w-[1200px] mx-auto p-5 pt-[100px]' id='work'>
         <div className='pb-8'>
-            <p className='text-4xl mb-3 font-bold primary-color'>Work</p>
-            <p className='text-gray-400'>Check out some of my recent work</p>
+            <p className='text-4xl mb-3 font-bold primary-color'>Projects</p>
+            <p className='text-gray-400'>Check out some of my recent projects</p>
         </div>
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
