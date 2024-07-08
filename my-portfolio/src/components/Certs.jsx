@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-import Tooltip from '../components/subcomponents/Tooltip'
 import C1 from '../assets/Certificates/HCIA.jpg'
 import C2 from '../assets/Certificates/GoogleCC1.jpg'
 import C3 from '../assets/Certificates/GoogleCC2.jpg'
@@ -35,16 +34,16 @@ const Certs = () => {
   };
 
   return (
-    <div id='Certifications' className='max-w-[1200px] mx-auto my-12 pt-[100px] md:pt-[80px]'>
-      <div className='md:grid md:grid-cols-2 sm:py-16'>
+    <div id='Certifications' className=' max-w-[1200px] mx-auto my-12 pt-[110px] sm:pt-[130px]'>
+      <div className=' bg-fourth-color md:grid md:grid-cols-2 rounded-xl py-5 px-5'>
         <h2 className='text-4xl md:text-5xl font-bold mb-8 col-span-2 text-center text-[#9fef00]'>Certifications</h2>
         <div className='hidden md:block'>
-              <ul className='px-10 pb-10 mt-0 text-left align-center text-white flex flex-col text-xl'>
+              <ul className='px-10 pb-10 mt-0 text-left align-center text-[#A4B1CDff] flex flex-col text-xl'>
                   {certNames.map((name, idx) => (
                       <li
                       key={idx}
                       onClick={() => ChangeImage(idx)}
-                      className={`p-2 hover:bg-gradient-to-r from-[#9fef00be] to-black transition duration-500 ease-in-out ${activeCert === idx ? "bg-gradient-to-r from-[#9fef00be] to-black" : ""}`}
+                      className={`p-2 hover:bg-gradient-to-r from-[#0b121f] to-[#1A2332ff] transition duration-5000 ease-in-out ${activeCert === idx ? "bg-gradient-to-r from-[#0b121f] to-[#1A2332ff]" : ""}`}
                       >
                       {name}
                       </li>
@@ -56,15 +55,13 @@ const Certs = () => {
         <div className='block md:hidden'>
               <div className='flex flex-col items-center'>
                   <div className='flex mt-2 items-center'>
-                      <button onClick={PrevCert} className="mx-5 text-gray-400 text-xl text-bold">&#10094;</button>
+                      <button onClick={PrevCert} className="mx-5 text-[#A4B1CDff] text-xl text-bold">&#10094;</button>
                       {imagePaths.map((_, idx) => (
-                        <Tooltip key={idx} text={certNames[idx]}>
                       <button
                           key={idx}
                           onClick={() => ChangeImage(idx)}
                           className={`w-2 h-2 mx-1 text-center rounded-full ${activeCert === idx ? 'bg-[#9fef00be]' : 'bg-gray-400'}`}
                       ></button>
-                      </Tooltip>
                       ))}
                       <button onClick={NextCert} className="mx-5 text-gray-400  text-xl text-bold">&#10095;</button>
                   </div>

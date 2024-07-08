@@ -6,21 +6,60 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Certs from "./components/Certs";
+import Experience from "./components/Experience";
+import Cyberprojects from "./components/Cyberprojects";
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faGoogle, faLinux } from '@fortawesome/free-brands-svg-icons'
+import {  } from '@fortawesome/free-regular-svg-icons'
+import { faCode, faBug, faDatabase, faFlag, faShieldHalved} from '@fortawesome/free-solid-svg-icons'
+
+import {Provider} from 'react-redux'
+import projectStorage from './components/subcomponents/projectStorage'
+import { useState } from "react";
 
 
 function App() {
+  library.add(faGoogle,faCode,faBug,faLinux,faDatabase,faFlag,faShieldHalved);
+
+  const [currentContent, setCurrentContent] = useState('Main');
+  const [cprojectComponent, setcprojectComponent] = useState(<Navbar/>);
+
+  const displayProject = (projectComponent) => {
+    setcprojectComponent(projectComponent);
+    setCurrentContent('Projects');
+  };
+
+  const renderContent = () => {
+    if (currentContent == 'Projects') {
+      return (
+        <Provider store={projectStorage}>
+          <Cyberprojects  cprojectComponent={cprojectComponent}  setCurrentContent={setCurrentContent} />
+        </Provider>
+      );
+    }
+    return (
+      <>
+        <Navbar/>
+        <Hero/>
+        <Skills/>
+        <Certs/>
+        <About/>
+        <Experience/>
+        <Provider store={projectStorage}>
+          <Work displayProject={displayProject}/>
+        </Provider>
+        <Contact/>
+        <Footer/>
+      </>
+    );
+  };
+
   return (
     <div className="App">
-      <Navbar/>
-      <Hero/>
-      <Skills/>
-      <Certs/>
-      <About/>
-      <Work/>
-      <Contact/>
-      <Footer/>
+      {renderContent()}
     </div>
-  );
+  )
 }
 
 export default App;

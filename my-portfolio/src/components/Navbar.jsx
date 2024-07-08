@@ -15,17 +15,17 @@ const Navbar = () => {
             section.scrollIntoView({ behavior: 'smooth' });
         }
     }
-
+    //
     return (
         <div className='sticky bg-secondary-color top-0 left-0 z-50'>
             <div className='text-gray-400 h-[100px] max-w-[1200px] mx-auto flex justify-between items-center'>
-                <h1 className='text-3xl font-bold primary-color ml-4'>Nick.Js</h1>
+                <h1 className='text-3xl font-bold primary-color ml-4'onClick={(e) => gotoSection(e, 'Home')}>Nick.Js</h1>
                 <ul className='hidden md:flex'>
                     <li className='p-5'><a href="#Home" onClick={(e) => gotoSection(e, 'Home')}>Home</a></li>
                     <li className='p-5'><a href="#Skills" onClick={(e) => gotoSection(e, 'Skills')}>Skills</a></li>
                     <li className='p-5'><a href="#Certifications" onClick={(e) => gotoSection(e, 'Certifications')}>Certifications</a></li>
                     <li className='p-5'><a href="#about" onClick={(e) => gotoSection(e, 'about')}>About</a></li>
-                    <li className='p-5'><a href="#work" onClick={(e) => gotoSection(e, 'work')}>Projects</a></li>
+                    <li className='p-5'><a href="#work" onClick={(e) => gotoSection(e, 'work')}>Work</a></li>
                     <li className='p-5'><a href="#contact" onClick={(e) => gotoSection(e, 'contact')}>Contact</a></li>
                 </ul>
 
@@ -40,7 +40,7 @@ const Navbar = () => {
                         <li className='p-2'><a href="#Skills" onClick={(e) => {gotoSection(e, 'Skills'); handleNav();}}>Skills</a></li>
                         <li className='p-2'><a href="#Certifications" onClick={(e) => {gotoSection(e, 'Certifications'); handleNav();}}>Certifications</a></li>
                         <li className='p-2'><a href="#about" onClick={(e) => {gotoSection(e, 'about'); handleNav();}}>About</a></li>
-                        <li className='p-2'><a href="#work" onClick={(e) => {gotoSection(e, 'work'); handleNav();}}>Projects</a></li>
+                        <li className='p-2'><a href="#work" onClick={(e) => {gotoSection(e, 'work'); handleNav();}}>Work</a></li>
                         <li className='p-2'><a href="#contact" onClick={(e) => {gotoSection(e, 'contact'); handleNav();}}>Contact</a></li>
                     </ul>
                 </div>
