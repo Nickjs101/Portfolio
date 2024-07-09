@@ -25,6 +25,7 @@ const Navbar = () => {
                     <li className='p-5'><a href="#Skills" onClick={(e) => gotoSection(e, 'Skills')}>Skills</a></li>
                     <li className='p-5'><a href="#Certifications" onClick={(e) => gotoSection(e, 'Certifications')}>Certifications</a></li>
                     <li className='p-5'><a href="#about" onClick={(e) => gotoSection(e, 'about')}>About</a></li>
+                    <li className='p-5'><a href="#Experience" onClick={(e) => gotoSection(e, 'Experience')}>Experience</a></li>
                     <li className='p-5'><a href="#work" onClick={(e) => gotoSection(e, 'work')}>Work</a></li>
                     <li className='p-5'><a href="#contact" onClick={(e) => gotoSection(e, 'contact')}>Contact</a></li>
                 </ul>
@@ -40,6 +41,7 @@ const Navbar = () => {
                         <li className='p-2'><a href="#Skills" onClick={(e) => {gotoSection(e, 'Skills'); handleNav();}}>Skills</a></li>
                         <li className='p-2'><a href="#Certifications" onClick={(e) => {gotoSection(e, 'Certifications'); handleNav();}}>Certifications</a></li>
                         <li className='p-2'><a href="#about" onClick={(e) => {gotoSection(e, 'about'); handleNav();}}>About</a></li>
+                        <li className='p-2'><a href="#Experience" onClick={(e) => {gotoSection(e, 'Experience'); handleNav();}}>Experience</a></li>
                         <li className='p-2'><a href="#work" onClick={(e) => {gotoSection(e, 'work'); handleNav();}}>Work</a></li>
                         <li className='p-2'><a href="#contact" onClick={(e) => {gotoSection(e, 'contact'); handleNav();}}>Contact</a></li>
                     </ul>

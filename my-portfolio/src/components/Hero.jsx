@@ -1,7 +1,6 @@
 import React from 'react'
 import heroimage from '../assets/Profilepic.png'
 import resume from '../assets/NICK_JOSHUA_MONTEMAYOR_RESUME.pdf'
-import video from '../assets/video.mp4'
 import {TypeAnimation} from 'react-type-animation'
 
 
@@ -15,12 +14,12 @@ const Hero = () => {
     }
     //
   return (
-    <div id='Home' className='bg-secondary-color grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 pt-[80px] md:pt-[100px]'>
-        <div className='bg-gradient-to-r from-slate-900 to-slate-700 col-span-1 my-auto mx-auto h-auto w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px] rounded-[50%] shadow-lg shadow-[#9fef00be]'>
+    <div id='Home' className='bg-secondary-color grid grid-cols-1 lg:grid-cols-3 lg:gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 pt-[80px] md:pt-[100px]'>
+        <div className='bg-gradient-to-r from-slate-900 to-slate-700 col-span-1 my-auto mx-auto h-auto w-[200px] sm:w-[250px] md:w-[400px] lg:w-[400px] rounded-[50%] shadow-lg shadow-[#9fef00be]'>
             <img className='rounded-[50%]' src={heroimage} alt='Hero Image'/>
         </div>
         <div className='col-span-2 px-5 my-auto'>
-            <h1 className='text-white text-4xl sm:text-5xl lg:text-6xl font-bold'>
+            <h1 className=' my-5 lg:my-0 text-white text-4xl sm:text-5xl lg:text-6xl font-bold'>
                 <span className='primary-color'>
                     I'm a
                 </span> <br/>
