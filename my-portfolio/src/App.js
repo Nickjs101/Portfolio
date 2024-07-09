@@ -12,7 +12,7 @@ import Cyberprojects from "./components/Cyberprojects";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faGoogle, faLinux } from '@fortawesome/free-brands-svg-icons'
 import {  } from '@fortawesome/free-regular-svg-icons'
-import { faCode, faBug, faDatabase, faFlag, faShieldHalved} from '@fortawesome/free-solid-svg-icons'
+import { faCode, faBug, faDatabase, faFlag, faShieldHalved, faPeopleGroup, faLightbulb, faBookAtlas} from '@fortawesome/free-solid-svg-icons'
 
 import {Provider} from 'react-redux'
 import projectStorage from './components/subcomponents/projectStorage'
@@ -20,7 +20,7 @@ import { useState } from "react";
 
 
 function App() {
-  library.add(faGoogle,faCode,faBug,faLinux,faDatabase,faFlag,faShieldHalved);
+  library.add(faGoogle,faCode,faBug,faLinux,faDatabase,faFlag,faShieldHalved,faPeopleGroup,faLightbulb,faBookAtlas);
 
   const [currentContent, setCurrentContent] = useState('Main');
   const [cprojectComponent, setcprojectComponent] = useState(<Navbar/>);

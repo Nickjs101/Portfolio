@@ -1,7 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import img1 from '../assets/Works/Work1.png';
 import img2 from '../assets/Works/Work2.png';
-import img3 from '../assets/Works/Work3.png';
+import img3 from '../assets/pcbytes.jpg';
 
 const Experience = () => {
   const myExperiences = [
@@ -46,10 +47,12 @@ const Experience = () => {
   ];
 
   return (
-    <div id='Experience' className='max-w-[1200px] mx-auto pt-[100px] pb-[50px]'>
+    <div id='Experience' className='max-w-[1200px] mx-auto pt-[100px] pb-[100px]'>
       <div className='primary-color text-4xl font-bold text-center w-full mb-8'>Professional Experience</div>
+      
       {myExperiences.map((experience, index) => (
       <div key={index}>
+
         <div className='w-full grid md:hidden grid-cols-5 items-center pr-6'>
 
           <div className='col-span-1 flex flex-col h-full items-center mx-8'>
@@ -58,35 +61,43 @@ const Experience = () => {
             <div className='w-1 flex-grow bg-primary-color'></div>
           </div>
 
-          <div className='col-span-4 flex flex-col h-full items-center my-8'>
-            <div className='col-span-2 flex justify-center items-center'>
-              <img src={experience.img} alt='Experience' className='w-full h-full object-cover rounded-lg' />
-            </div>
-            <div className='bg-fourth-color w-full rounded-lg secondary-color p-4 col-span-2 flex flex-col justify-between'>
-              <div>
-                <div className='text-lg font-bold'>{experience.company}</div>
-                <div className='text-sm'>{experience.position}</div>
-                <div className='text-sm italic mb-2'>{experience.date}</div>
-                <ul className='list-disc list-inside'>
-                  {experience.tasks.map((task, i) => (
-                    <li key={i} className='text-sm'><b className='font-semibold'>{task.header}</b>{task.info}</li>
-                  ))}
-                </ul>
+          <div className='col-span-4 h-auto py-10'>
+            <div className='bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl flex flex-col h-full items-center'>
+              <div className='col-span-2 flex justify-center items-center p-3'>
+                <img src={experience.img} alt='Experience' className=' object-cover rounded-lg' />
+              </div>
+              <div className=' w-full secondary-color p-4 col-span-2 flex flex-col justify-between'>
+                <div className='gap-3'>
+                  <div className='flex justify-between items-center'>
+                    <div className='text-3xl font-bold'>{experience.position}</div>
+                    <div className='text-sm font-bold italic px-2 rounded-full text-center bg-[#a4b1cd47] secondary-color'>{experience.date}</div>
+                  </div>
+                  <div className='text-lg font-medium mb-5'>{experience.company}</div>
+                  <ul className='list-disc list-inside space-y-4'>
+                    {experience.tasks.map((task, i) => (
+                      <li key={i} className='text-md'><b className='font-semibold'>{task.header} </b>{task.info}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
         </div>
 
+
+
         <div className='hidden md:grid w-full h-auto grid-cols-5 items-center'>
-          <div className={`${experience.swap? 'hidden': 'block'} bg-fourth-color rounded-lg secondary-color p-4 col-span-2 flex flex-col justify-between`}>
-            <div>
-              <div className='text-lg font-bold'>{experience.company}</div>
-              <div className='text-sm'>{experience.position}</div>
-              <div className='text-sm italic mb-2'>{experience.date}</div>
-              <ul className='list-disc list-inside'>
+          <div className={`${experience.swap? 'hidden': 'block'} bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl secondary-color p-4 my-10 col-span-2 flex flex-col justify-between`}>
+            <div className='gap-3'>
+              <div className='flex justify-between items-center'>
+                <div className='text-3xl font-bold'>{experience.position}</div>
+                <div className='text-sm font-bold italic px-2 rounded-full text-center bg-[#a4b1cd47] secondary-color'>{experience.date}</div>
+              </div>
+              <div className='text-lg font-medium mb-3'>{experience.company}</div>
+              <ul className='list-disc list-inside space-y-2 font-sans'>
                 {experience.tasks.map((task, i) => (
-                  <li key={i} className='text-sm'><b className='font-semibold'>{task.header}</b>{task.info}</li>
+                  <li key={i} className='text-md'><b className='font-semibold'>{task.header} </b>{task.info}</li>
                 ))}
               </ul>
             </div>
@@ -101,14 +112,16 @@ const Experience = () => {
             <div className='w-1 flex-grow bg-primary-color'></div>
           </div>
           
-          <div className={`${experience.swap? 'block': 'hidden'} bg-fourth-color rounded-lg secondary-color p-4 col-span-2 flex flex-col justify-between`}>
-            <div>
-              <div className='text-lg font-bold'>{experience.company}</div>
-              <div className='text-sm'>{experience.position}</div>
-              <div className='text-sm italic mb-2'>{experience.date}</div>
-              <ul className='list-disc list-inside'>
+          <div className={`${experience.swap? 'block': 'hidden'} bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl secondary-color p-4 my-10 col-span-2 flex flex-col justify-between `}>
+            <div className='gap-3'>
+              <div className='flex justify-between items-center'>
+                <div className='text-3xl font-bold'>{experience.position}</div>
+                <div className='text-sm font-bold italic px-2 rounded-full text-center bg-[#a4b1cd47] secondary-color'>{experience.date}</div>
+              </div>
+              <div className='text-lg font-medium mb-3'>{experience.company}</div>
+              <ul className='list-disc list-inside space-y-2 font-sans'>
                 {experience.tasks.map((task, i) => (
-                  <li key={i} className='text-sm'><b className='font-semibold'>{task.header}</b>{task.info}</li>
+                  <li key={i} className='text-md'><b className='font-semibold'>{task.header} </b>{task.info}</li>
                 ))}
               </ul>
             </div>
@@ -119,6 +132,50 @@ const Experience = () => {
         </div>
       </div>
       ))}
+
+      
+      <div className='w-full mt-[200px]'>
+        <div className='my-10 w-full text-center text-3xl font-bold text-white'>Additional Professional Highlights</div>
+
+        <div className='w-full flex flex-wrap justify-evenly gap-4'>
+          <div class="shadow-lg rounded-lg border border-[#A4B1CDff] p-6 max-w-sm">
+            <div class="flex items-center mb-4">
+                <div className="bg-tertiary-color rounded-full p-2 w-10 h-10 flex items-center justify-center mr-3">
+                  <FontAwesomeIcon icon="fa-solid fa-people-group" />
+                </div>
+                <h3 class="text-xl text-white font-semibold">Leadership & Teamwork</h3>
+            </div>
+            <p class="secondary-color">
+              Demonstrated strong leadership and teamwork skills in academic and professional settings, successfully leading project teams and collaborating with colleagues to achieve common goals.
+            </p>
+          </div>
+
+          <div class="shadow-lg rounded-lg border border-[#A4B1CDff] p-6 max-w-sm">
+            <div class="flex items-center mb-4">
+              <div className="bg-tertiary-color rounded-full p-2 w-10 h-10 flex items-center justify-center mr-3">
+                <FontAwesomeIcon icon="fa-solid fa-book-atlas" />
+              </div>
+              <h3 class="text-xl text-white font-semibold">Technical Acumen</h3>
+            </div>
+            <p class="secondary-color">
+              Continuously updated technical knowledge through certifications and self-directed learning, staying abreast of the latest industry trends and technological advancements.
+            </p>
+          </div>
+
+          <div class="shadow-lg rounded-lg border border-[#A4B1CDff] p-6 max-w-sm">
+            <div class="flex items-center mb-4">
+                <div className="bg-tertiary-color rounded-full p-2 w-10 h-10 flex items-center justify-center mr-3">
+                  <FontAwesomeIcon icon="fa-solid fa-lightbulb" />
+                </div>
+                <h3 class="text-xl text-white font-semibold">Problem-Solving</h3>
+            </div>
+            <p class="secondary-color">
+              Exhibited exceptional problem-solving abilities, identifying and resolving complex technical issues efficiently and effectively.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };

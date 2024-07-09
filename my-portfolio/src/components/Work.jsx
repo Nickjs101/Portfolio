@@ -17,7 +17,7 @@ const Work = ({ displayProject }) => {
         </div>
 
         <div className='my-5 flex flex-col'>
-          <div className='mb-10 w-full text-center text-3xl text-white'>Software Development</div>
+          <div className='mb-10 w-full text-center text-3xl text-white font-bold'>Software Development</div>
           <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
 
             {/* <div className='transform transition-transform duration-300 hover:scale-105 overflow-hidden
@@ -73,7 +73,7 @@ const Work = ({ displayProject }) => {
         </div>
 
         <div className='mt-[100px] flex flex-col'>
-            <div className='mb-10 w-full text-center text-3xl text-white'>CyberSecurity</div>
+            <div className='mb-10 w-full text-center text-3xl text-white font-bold'>CyberSecurity</div>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
               {Projects.map((project, index) => (
                   <div key={index} className='p-4 bg-fourth-color secondary-color mb-2 rounded-xl' >
