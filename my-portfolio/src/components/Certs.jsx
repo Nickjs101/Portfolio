@@ -35,7 +35,7 @@ const Certs = () => {
 
   return (
     <div id='Certifications' className=' max-w-[1200px] mx-auto my-12 pt-[110px] sm:pt-[130px]'>
-      <div className=' bg-fourth-color md:grid md:grid-cols-2 rounded-xl py-5 px-5'>
+      <div className='bg-fourth-color md:grid md:grid-cols-2 rounded-xl py-5 px-5'>
         <h2 className='text-4xl md:text-5xl font-bold mb-8 col-span-2 text-center text-[#9fef00]'>Certifications</h2>
         <div className='hidden md:block'>
               <ul className='px-10 pb-10 mt-0 text-left align-center text-[#A4B1CDff] flex flex-col text-xl'>
@@ -50,8 +50,10 @@ const Certs = () => {
                   ))}
               </ul>
         </div>
-        <h3 className='block md:hidden text-xl font-bold  text-white text-center'>{certNames[activeCert]}</h3>
-        <img className='mx-auto py-5 md:py-0' src={imgsrc} alt="Certificate" />
+        <h3 className='block md:hidden text-xl font-bold text-white text-center h-[59px] md:h-auto'>{certNames[activeCert]}</h3>
+        <div className='mx-auto w-auto py-5 md:py-0'>
+          <img className='h-[259px] lg:h-[400px] mx-auto' src={imgsrc} alt="Certificate" />
+        </div>
         <div className='block md:hidden'>
               <div className='flex flex-col items-center'>
                   <div className='flex mt-2 items-center'>

@@ -1,41 +1,60 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useMemo, Component} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { addProject } from './subcomponents/projectSlice'
+// import { addProject } from './subcomponents/projectSlice'
 import Sidebar from './subcomponents/Sidebar'
 
 
-const Cyberprojects = ({cprojectComponent, setCurrentContent}) => {
-    const [currentProject, setCurrentProject] = useState(cprojectComponent);
-    const Projects = useSelector((state) => state.project.projects);
+
+const Cyberprojects = ({projectComponent, category, setprojectCategory, setprojectComponent, setCurrentContent}) => {
+    const [currentComponent, setCurrentComponent] = useState(projectComponent);
+    const projectCategory = useSelector((state) => state.project.projects);
+
+    const Categories = useMemo(() => ({
+      'Cybersecurity': projectCategory[0].Cybersecurity,
+      'SoftwareDev': projectCategory[1].SoftwareDev,
+    }), [projectCategory]);
+
+    const [Projects, setProjects] = useState(Categories[category]);
+
     // const dispatch = useDispatch(); //adding project dispatch(addProject(THE PROJECT ARRAY));
+    
+    useEffect(() => {
+      setProjects(Categories[category]);
+    }, [category, Categories]);
+  
 
-    const gotoTop = (event, id, component) => {
-      event.preventDefault();
-      const section = document.getElementById(id);
-      if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
-          setCurrentProject(component);
-      }
-    }
-
-    useEffect((e) => {
+    useEffect(() => {
       const section = document.getElementById('Content');
       if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
+        section.scrollIntoView({ behavior: 'smooth' });
       }
-    }, [])
+    }, [currentComponent]);
+
+    const changeCategory = (newcategory, newcomponent) => {
+      setProjects(Categories[newcategory]);
+      setCurrentComponent(newcomponent);
+    };
+    
   return (
     <div>
       <div className='sticky bg-secondary-color top-0 left-0 z-50'>
               <div className='text-gray-400 h-[70px] max-w-[1200px] mx-auto flex justify-between items-center'>
-                  <h1 className='text-3xl font-bold primary-color ml-4 cursor-pointer' onClick={() => setCurrentContent('Main')}>&#10094; Nick.Js</h1>
+                  <h1 className='text-3xl font-bold primary-color ml-4 cursor-pointer' onClick={() => setCurrentContent('Main')}>&#10094; Projects</h1>
+                  <div className='flex gap-5'>
+                    <a href="#" onClick={() => {setprojectCategory('Cybersecurity');setCurrentComponent(projectCategory[0].Cybersecurity[0].component);}} className={`text-transparent bg-clip-text bg-gradient-to-r from-[#4CAF50] to-[#81C784] font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-none shadow-black hover:bg-primary-dark ${category == 'Cybersecurity'? 'shadow-none' : 'shadow-lg'}`}>
+                      Cybersecurity
+                    </a>
+                    <a href="#" onClick={() => {setprojectCategory('SoftwareDev');setCurrentComponent(projectCategory[1].SoftwareDev[0].component);}} className={`text-transparent bg-clip-text bg-gradient-to-r from-[#4CAF50] to-[#81C784] font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-none shadow-black hover:bg-primary-dark ${category == 'SoftwareDev'? 'shadow-none' : 'shadow-lg'}`}>
+                      Software Development
+                    </a>
+                  </div>
               </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto max-w-[1200px]">
           <div id='Content' className="col-span-1 lg:col-span-2 p-4 text-white bg-secondary-color">
-              {currentProject}
+              {currentComponent}
           </div>
-          <Sidebar projects={Projects} currentProject={currentProject} setCurrentProject={gotoTop} />
+          <Sidebar projects={Projects} currentComponent={currentComponent} setCurrentComponent={setCurrentComponent} />
       </div>
     </div>
   )

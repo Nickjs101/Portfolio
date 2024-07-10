@@ -18,7 +18,7 @@ const Navbar = () => {
     //
     return (
         <div className='sticky bg-secondary-color top-0 left-0 z-50'>
-            <div className='text-gray-400 h-[100px] max-w-[1200px] mx-auto flex justify-between items-center'>
+            <div className='text-gray-400 h-[80px] md:h-[100px] max-w-[1200px] mx-auto flex justify-between items-center'>
                 <h1 className='text-3xl font-bold primary-color ml-4'onClick={(e) => gotoSection(e, 'Home')}>Nick.Js</h1>
                 <ul className='hidden md:flex'>
                     <li className='p-5'><a href="#Home" onClick={(e) => gotoSection(e, 'Home')}>Home</a></li>

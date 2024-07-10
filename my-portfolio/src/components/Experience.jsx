@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import img1 from '../assets/Works/Work1.png';
-import img2 from '../assets/Works/Work2.png';
+import img1 from '../assets/sti.jpg';
+import img2 from '../assets/jollibee.jpg';
 import img3 from '../assets/pcbytes.jpg';
 
 const Experience = () => {
@@ -64,7 +64,7 @@ const Experience = () => {
           <div className='col-span-4 h-auto py-10'>
             <div className='bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl flex flex-col h-full items-center'>
               <div className='col-span-2 flex justify-center items-center p-3'>
-                <img src={experience.img} alt='Experience' className=' object-cover rounded-lg' />
+                <img src={experience.img} alt='Experience' className='w-[250px] object-cover rounded-lg' />
               </div>
               <div className=' w-full secondary-color p-4 col-span-2 flex flex-col justify-between'>
                 <div className='gap-3'>
@@ -88,7 +88,7 @@ const Experience = () => {
 
 
         <div className='hidden md:grid w-full h-auto grid-cols-5 items-center'>
-          <div className={`${experience.swap? 'hidden': 'block'} bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl secondary-color p-4 my-10 col-span-2 flex flex-col justify-between`}>
+          <div className={`${experience.swap? 'hidden': 'block'} bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl secondary-color p-4 my-16 col-span-2 flex flex-col justify-between`}>
             <div className='gap-3'>
               <div className='flex justify-between items-center'>
                 <div className='text-3xl font-bold'>{experience.position}</div>
@@ -102,8 +102,8 @@ const Experience = () => {
               </ul>
             </div>
           </div>
-          <div className={`${experience.swap? 'block': 'hidden'} col-span-2 flex justify-center items-center`}>
-            <img src={experience.img} alt='Experience' className='w-full h-full object-cover rounded-lg' />
+          <div className={`${experience.swap ? 'block' : 'hidden'} col-span-2 flex justify-center items-center`}>
+            <img src={experience.img} alt='Experience' className='w-[300px] object-cover rounded-lg' />
           </div>
 
           <div className='col-span-1 flex flex-col h-full items-center mx-8'>
@@ -112,7 +112,7 @@ const Experience = () => {
             <div className='w-1 flex-grow bg-primary-color'></div>
           </div>
           
-          <div className={`${experience.swap? 'block': 'hidden'} bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl secondary-color p-4 my-10 col-span-2 flex flex-col justify-between `}>
+          <div className={`${experience.swap? 'block': 'hidden'} bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl secondary-color p-4 my-16 col-span-2 flex flex-col justify-between `}>
             <div className='gap-3'>
               <div className='flex justify-between items-center'>
                 <div className='text-3xl font-bold'>{experience.position}</div>
@@ -127,7 +127,7 @@ const Experience = () => {
             </div>
           </div>
           <div className={`${experience.swap? 'hidden': 'block'} col-span-2 flex justify-center items-center`}>
-            <img src={experience.img} alt='Experience' className='w-full h-full object-cover rounded-lg' />
+            <img src={experience.img} alt='Experience' className='w-[300px]  object-cover rounded-lg' />
           </div>
         </div>
       </div>
