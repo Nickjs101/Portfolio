@@ -5,9 +5,9 @@ import TradeHistoryImage from '../../assets/Works/tradingjournal.jpg'
 const AppProject1 = () => {
   return (
     <div className="font-sans leading-relaxed tracking-wide flex flex-col justify-center items-center">
-      <div className="max-w-4xl mx-auto p-6 shadow-lg rounded-lg secondary-color">
+      <div className="max-w-4xl mx-auto p-0 md:p-6 shadow-lg rounded-lg secondary-color">
         <img src={TradeHistoryImage} alt="Trade History" className="w-full h-auto mb-6 rounded-lg"/>
-        <h1 className="text-5xl font-bold mb-4 text-white rounded-lg">Trading Journal</h1>
+        <h1 className="text-3xl lg:text-5xl font-bold mb-4 text-white rounded-lg">Trading Journal</h1>
         <h2 className="text-xl font-semibold mb-2 text-white">App Overview</h2>
         <p className="mb-4">In the fast-paced world of trading, keeping track of your trades and managing risk is crucial to success. The Trading Journal App is designed to provide traders with an easy and effective way to monitor their trading performance, analyze their strategies, and calculate risks. This blog will guide you through the app's key features, including trade history tracking, risk calculation, performance analysis, and a user-friendly interface.</p>
         

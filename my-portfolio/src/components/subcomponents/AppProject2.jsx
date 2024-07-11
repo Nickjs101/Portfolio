@@ -7,9 +7,9 @@ import kodymap from '../../assets/Works/kodymap.jpg';
 const AppProject2 = () => {
   return (
     <div className="font-sans leading-relaxed tracking-wide flex flex-col items-center">
-      <div className="max-w-4xl w-full  p-8 shadow-lg rounded-lg">
+      <div className="max-w-4xl w-full p-0 md:p-6 shadow-lg rounded-lg">
         <img src={KodyAdventureImage} alt="Kody's Adventure" className="w-full h-auto mb-6 rounded-lg" />
-        <h1 className="text-5xl font-bold mb-4 text-white">Kody's Adventure</h1>
+        <h1 className="text-3xl lg:text-5xl font-bold mb-4 text-white">Kody's Adventure</h1>
         
         <h2 className="text-2xl font-semibold mb-4 text-white">Project Overview</h2>
         <p className="mb-4 secondary-color">

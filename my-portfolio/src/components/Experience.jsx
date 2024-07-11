@@ -47,11 +47,11 @@ const Experience = () => {
   ];
 
   return (
-    <div id='Experience' className='max-w-[1200px] mx-auto pt-[100px] pb-[100px]'>
+    <div id='Experience' className='max-w-[1200px] mx-auto pb-[100px]'>
       <div className='primary-color text-4xl font-bold text-center w-full mb-8'>Professional Experience</div>
       
       {myExperiences.map((experience, index) => (
-      <div key={index}>
+      <div key={index }>
 
         <div className='w-full grid md:hidden grid-cols-5 items-center pr-6'>
 
@@ -68,7 +68,7 @@ const Experience = () => {
               </div>
               <div className=' w-full secondary-color p-4 col-span-2 flex flex-col justify-between'>
                 <div className='gap-3'>
-                  <div className='flex justify-between items-center'>
+                  <div className='flex flex-col lg:flex-row justify-between items-center'>
                     <div className='text-3xl font-bold'>{experience.position}</div>
                     <div className='text-sm font-bold italic px-2 rounded-full text-center bg-[#a4b1cd47] secondary-color'>{experience.date}</div>
                   </div>
@@ -87,7 +87,7 @@ const Experience = () => {
 
 
 
-        <div className='hidden md:grid w-full h-auto grid-cols-5 items-center'>
+        <div className='hidden md:grid w-full h-auto grid-cols-5 items-center px-4'>
           <div className={`${experience.swap? 'hidden': 'block'} bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl secondary-color p-4 my-16 col-span-2 flex flex-col justify-between`}>
             <div className='gap-3'>
               <div className='flex justify-between items-center'>
@@ -103,7 +103,7 @@ const Experience = () => {
             </div>
           </div>
           <div className={`${experience.swap ? 'block' : 'hidden'} col-span-2 flex justify-center items-center`}>
-            <img src={experience.img} alt='Experience' className='w-[300px] object-cover rounded-lg' />
+            <img src={experience.img} alt='Experience' className='w-[300px] object-cover rounded-lg shadow-lg' />
           </div>
 
           <div className='col-span-1 flex flex-col h-full items-center mx-8'>
@@ -127,7 +127,7 @@ const Experience = () => {
             </div>
           </div>
           <div className={`${experience.swap? 'hidden': 'block'} col-span-2 flex justify-center items-center`}>
-            <img src={experience.img} alt='Experience' className='w-[300px]  object-cover rounded-lg' />
+            <img src={experience.img} alt='Experience' className='w-[300px]  object-cover rounded-lg shadow-lg' />
           </div>
         </div>
       </div>

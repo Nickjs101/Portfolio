@@ -3,8 +3,8 @@ import React from 'react'
 const Project3 = () => {
   return (
     <div className="font-sans leading-relaxed tracking-wide flex flex-col justify-center items-center">
-      <div className="max-w-4xl mx-auto p-6 shadow-lg rounded-lg secondary-color">
-        <h1 className="text-5xl font-bold mb-4 text-white rounded-lg">Vulnerability Assessment Report</h1>
+      <div className="w-full mx-auto p-0 md:p-6 shadow-lg rounded-lg secondary-color">
+        <h1 className="text-3xl lg:text-5xl font-bold mb-4 text-white rounded-lg">Vulnerability Assessment Report</h1>
         
         <h2 className="text-xl font-semibold mb-2">1st January 20XX</h2>
         
@@ -24,40 +24,43 @@ const Project3 = () => {
         </p>
         
         <h3 className="text-lg font-semibold mb-2 text-white">Risk Assessment</h3>
-        <table className="min-w-full bg-fourth-color mb-4 text-center">
-          <thead>
-            <tr className='bg-tertiary-color tertiary-color'>
-              <th className="py-2">Threat Source</th>
-              <th className="py-2">Threat Event</th>
-              <th className="py-2">Likelihood</th>
-              <th className="py-2">Severity</th>
-              <th className="py-2">Risk</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="py-2">Hacker</td>
-              <td className="py-2">Obtain sensitive information via exfiltration</td>
-              <td className="py-2">3</td>
-              <td className="py-2">3</td>
-              <td className="py-2">9</td>
-            </tr>
-            <tr>
-              <td className="py-2">Employee</td>
-              <td className="py-2">Accidentally alter data and disrupt operations</td>
-              <td className="py-2">2</td>
-              <td className="py-2">3</td>
-              <td className="py-2">6</td>
-            </tr>
-            <tr>
-              <td className="py-2">Customer</td>
-              <td className="py-2">Alter or Delete customer information</td>
-              <td className="py-2">1</td>
-              <td className="py-2">3</td>
-              <td className="py-2">3</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className='overflow-x-auto'>
+          <table className="min-w-full bg-fourth-color mb-4 text-center">
+            <thead>
+              <tr className='bg-tertiary-color tertiary-color'>
+                <th className="py-2">Threat Source</th>
+                <th className="py-2">Threat Event</th>
+                <th className="py-2">Likelihood</th>
+                <th className="py-2">Severity</th>
+                <th className="py-2">Risk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="py-2">Hacker</td>
+                <td className="py-2">Obtain sensitive information via exfiltration</td>
+                <td className="py-2">3</td>
+                <td className="py-2">3</td>
+                <td className="py-2">9</td>
+              </tr>
+              <tr>
+                <td className="py-2">Employee</td>
+                <td className="py-2">Accidentally alter data and disrupt operations</td>
+                <td className="py-2">2</td>
+                <td className="py-2">3</td>
+                <td className="py-2">6</td>
+              </tr>
+              <tr>
+                <td className="py-2">Customer</td>
+                <td className="py-2">Alter or Delete customer information</td>
+                <td className="py-2">1</td>
+                <td className="py-2">3</td>
+                <td className="py-2">3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
         
         <h3 className="text-lg font-semibold mb-2 text-white">Approach</h3>
         <p className="mb-4">

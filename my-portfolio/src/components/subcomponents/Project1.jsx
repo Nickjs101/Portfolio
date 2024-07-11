@@ -8,9 +8,9 @@ import Linux5 from '../../assets/Linux/Picture5.png'
 const Project1 = () => {
   return (
     <div className=" font-sans leading-relaxed tracking-wide flex flex-col justify-center items-center">
-      <div className="max-w-4xl mx-auto p-6 shadow-lg rounded-lg secondary-color">
+      <div className="max-w-4xl mx-auto p-0 md:p-6 shadow-lg rounded-lg secondary-color">
         
-        <h1 className="text-5xl font-bold mb-4 text-white rounded-lg">File Permissions in Linux</h1>
+        <h1 className="text-3xl lg:text-5xl font-bold mb-4 text-white rounded-lg">File Permissions in Linux</h1>
         <h2 className="text-xl font-semibold mb-2">Project Description</h2>
         <p className="mb-4 ">In the realm of cybersecurity, ensuring proper file permissions is paramount to maintaining system integrity and security. As a security professional at a large organization, my role involves collaborating with the research team to ensure that only authorized users have the appropriate permissions on critical files and directories. In this section, I’ll walk you through a recent project where I managed file permissions in a Linux environment to bolster system security.</p>
         

@@ -8,19 +8,18 @@ import Footer from "./components/Footer";
 import Certs from "./components/Certs";
 import Experience from "./components/Experience";
 import Cyberprojects from "./components/Cyberprojects";
-import AppProject1 from "./components/subcomponents/AppProject1";
-import AppProject2 from "./components/subcomponents/AppProject2";
+import Education from "./components/Education";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faGoogle, faLinux } from '@fortawesome/free-brands-svg-icons'
 import {  } from '@fortawesome/free-regular-svg-icons'
-import { faCode, faBug, faDatabase, faFlag, faShieldHalved, faPeopleGroup, faLightbulb, faBookAtlas} from '@fortawesome/free-solid-svg-icons'
+import { faCode, faBug, faDatabase, faFlag, faShieldHalved, faPeopleGroup, faLightbulb, faBookAtlas, faShield, faFileCode} from '@fortawesome/free-solid-svg-icons'
 
 import {Provider} from 'react-redux'
 import projectStorage from './components/subcomponents/projectStorage'
 import { useState, useCallback } from "react";
 
-library.add(faGoogle,faCode,faBug,faLinux,faDatabase,faFlag,faShieldHalved,faPeopleGroup,faLightbulb,faBookAtlas);
+library.add(faGoogle,faCode,faBug,faLinux,faDatabase,faFlag,faShieldHalved,faPeopleGroup,faLightbulb,faBookAtlas,faShield,faFileCode);
 
 function App() {
 
@@ -50,6 +49,7 @@ function App() {
         <Certs/>
         <About/>
         <Experience/>
+        <Education/>
         <Provider store={projectStorage}>
           <Work displayProject={displayProject}/>
         </Provider>

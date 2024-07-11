@@ -2,25 +2,13 @@ import React from 'react'
 import aboutImg  from '../assets/about.jpg'
 
 const About = () => {
-    const softSkills = [
-        'Strong Problem-Solving Skill',
-        'Troubleshooting Skill',
-        'Computer Maintenance',
-        'Critical Thinking Skills',
-        'Analytical Skills',
-        'Time Management Skills',
-        'Creativity',
-        'Persistence',
-        'Initiative',
-        'Adaptability',
-        'Active Listening'
-        ];
+    
   return (
-    <div id='about' className='text-white max-w-[1200px] mx-auto my-12 pt-[100px]'>
+    <div id='about' className='text-white max-w-[1200px] mx-auto my-[200px]'>
         <h2 className='text-4xl font-bold primary-color mx-6'>
             About Me
         </h2>
-        <div className='md:grid md:grid-cols-2 sm:py-16'>
+        <div className='md:grid md:grid-cols-2'>
             <div className='md:mt-0 text-left flex'>
                 <div className='my-auto mx-6'>
                     <p className='text-base text-justify lg:text-lg'>
@@ -30,15 +18,7 @@ const About = () => {
                     
                 </div>
             </div>
-            <img className='mx-auto rounded-3xl py-8 md:py-0 shadow-md shadow-[#9fef00] mt-2 md:mt-0' src={aboutImg} alt="About Image" width={300} height={300} />
-            <div className='mx-6 mt-5'>
-                <h4 className='text-xl my-2 font-bold'>Soft Skills:</h4>
-                        <div className='flex flex-wrap'>
-                            {softSkills.map((skill, index) => {
-                                return <p key={index} className='rounded-lg bg-[#9fef00] tertiary-color text-sm font-medium p-1 m-2'>{skill}</p>
-                            })}
-                        </div>
-                </div>
+            <img className='mx-auto rounded-3xl py-8 md:py-0 shadow-lg mt-2 md:mt-0' src={aboutImg} alt="About Image" width={300} height={300} />
         </div>
     </div>
   )

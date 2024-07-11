@@ -2,15 +2,15 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='bg-secondary-color max-w-[1200px] mx-auto p-5 pt-[100px]' id='contact'>
+    <div className='bg-secondary-color max-w-[1200px] mx-auto p-5 md:py-[50px] my-0 md:my-[100px]' id='contact'>
         <div className='text-center'>
             <h2 className='text-4xl font-bold leading-tight primary-color'>Contact Me
             </h2>
         </div>
 
         <div className='max-w-[800px] mx-auto'>
-            <div className='mt-6 bg-fourth-color rounded-xl'>
-                <div className='p-10'>
+            <div className='mt-6 bg-fourth-color rounded-3xl'>
+                <div className='p-6 md:p-10'>
                     <form action="https://getform.io/f/pagxqmdb" method='POST'>
                         <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4'>
                             

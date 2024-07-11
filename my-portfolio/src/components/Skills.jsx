@@ -8,8 +8,21 @@ import sql from '../assets/sql-server.png'
 import python from '../assets/python.png'
 
 const Skills = () => {
+    const softSkills = [
+        'Strong Problem-Solving Skill',
+        'Troubleshooting Skill',
+        'Computer Maintenance',
+        'Critical Thinking Skills',
+        'Analytical Skills',
+        'Time Management Skills',
+        'Creativity',
+        'Persistence',
+        'Initiative',
+        'Adaptability',
+        'Active Listening'
+        ];
   return (
-    <div id='Skills' className='pt-[100px]'>
+    <div id='Skills' className=' py-0 md:py-[100px] my-[100px] lg:my-[200px]'>
         <div className='bg-secondary-color border border-gray-600 text-gray-50 md:h-[150px] max-w-[1200px] mx-auto grid grid-cols-3
                         place-items-center md:flex md:justify-between md:items-center'>
             
@@ -48,6 +61,14 @@ const Skills = () => {
             <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
                 <img src={sql} alt="Js" />
                 <p className='mt-2'>SQL</p>
+            </div>
+        </div>
+        <div className='mx-6 mt-10'>
+            <h4 className='text-3xl my-2 font-bold mx-auto text-[#9fef00] text-center'>Soft Skills</h4>
+            <div className='flex flex-wrap justify-center'>
+                            {softSkills.map((skill, index) => {
+                                return <p key={index} className='rounded-full border border-[#9fef00] primary-color text-sm font-medium py-1 px-3 m-2'>{skill}</p>
+                            })}
             </div>
         </div>
     </div>

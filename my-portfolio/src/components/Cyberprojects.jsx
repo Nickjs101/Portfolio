@@ -2,6 +2,7 @@ import React, {useEffect, useState, useMemo, Component} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 // import { addProject } from './subcomponents/projectSlice'
 import Sidebar from './subcomponents/Sidebar'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
@@ -26,26 +27,34 @@ const Cyberprojects = ({projectComponent, category, setprojectCategory, setproje
     useEffect(() => {
       const section = document.getElementById('Content');
       if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+        const navbarHeight = document.querySelector('.sticky').offsetHeight; // get the navbar height
+        window.scrollTo({
+          top: section.offsetTop - navbarHeight, // adjust the scroll position
+          behavior: 'smooth',
+        });
       }
     }, [currentComponent]);
 
-    const changeCategory = (newcategory, newcomponent) => {
-      setProjects(Categories[newcategory]);
-      setCurrentComponent(newcomponent);
-    };
     
   return (
     <div>
       <div className='sticky bg-secondary-color top-0 left-0 z-50'>
               <div className='text-gray-400 h-[70px] max-w-[1200px] mx-auto flex justify-between items-center'>
                   <h1 className='text-3xl font-bold primary-color ml-4 cursor-pointer' onClick={() => setCurrentContent('Main')}>&#10094; Projects</h1>
-                  <div className='flex gap-5'>
-                    <a href="#" onClick={() => {setprojectCategory('Cybersecurity');setCurrentComponent(projectCategory[0].Cybersecurity[0].component);}} className={`text-transparent bg-clip-text bg-gradient-to-r from-[#4CAF50] to-[#81C784] font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-none shadow-black hover:bg-primary-dark ${category == 'Cybersecurity'? 'shadow-none' : 'shadow-lg'}`}>
+                  <div className='flex gap-5 mr-4'>
+                    <a href="#" onClick={() => {setprojectCategory('Cybersecurity');setCurrentComponent(projectCategory[0].Cybersecurity[0].component);}} className={`hidden md:block text-transparent bg-clip-text bg-gradient-to-r from-[#4CAF50] to-[#81C784] font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-none shadow-black hover:bg-primary-dark ${category == 'Cybersecurity'? 'shadow-none' : 'shadow-lg'}`}>
                       Cybersecurity
                     </a>
-                    <a href="#" onClick={() => {setprojectCategory('SoftwareDev');setCurrentComponent(projectCategory[1].SoftwareDev[0].component);}} className={`text-transparent bg-clip-text bg-gradient-to-r from-[#4CAF50] to-[#81C784] font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-none shadow-black hover:bg-primary-dark ${category == 'SoftwareDev'? 'shadow-none' : 'shadow-lg'}`}>
+                    <a href="#" onClick={() => {setprojectCategory('Cybersecurity');setCurrentComponent(projectCategory[0].Cybersecurity[0].component);}} className={`block md:hidden py-2 px-4 rounded-lg shadow-lg hover:shadow-none shadow-black hover:bg-primary-dark ${category == 'Cybersecurity'? 'shadow-none' : 'shadow-lg'}`}>
+                      <FontAwesomeIcon style={{color: "#4CAF50"}} icon='fa-solid fa-shield'/>
+                    </a>
+                    
+
+                    <a href="#" onClick={() => {setprojectCategory('SoftwareDev');setCurrentComponent(projectCategory[1].SoftwareDev[0].component);}} className={`hidden md:block text-transparent bg-clip-text bg-gradient-to-r from-[#4CAF50] to-[#81C784] font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-none shadow-black hover:bg-primary-dark ${category == 'SoftwareDev'? 'shadow-none' : 'shadow-lg'}`}>
                       Software Development
+                    </a>
+                    <a href="#" onClick={() => {setprojectCategory('SoftwareDev');setCurrentComponent(projectCategory[1].SoftwareDev[0].component);}} className={`block md:hidden py-2 px-4 rounded-lg shadow-lg hover:shadow-none shadow-black hover:bg-primary-dark ${category == 'SoftwareDev'? 'shadow-none' : 'shadow-lg'}`}>
+                      <FontAwesomeIcon style={{color: "#4CAF50"}} icon='fa-solid fa-file-code'/>
                     </a>
                   </div>
               </div>

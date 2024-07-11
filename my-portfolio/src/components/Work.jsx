@@ -1,8 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import TradeHistoryImage from '../assets/Works/tradingjournal.jpg'
-import KodyAdventureImage from '../assets/Works/kodymain.jpg';
 
 import { useSelector } from 'react-redux'
 
@@ -10,7 +8,7 @@ const Work = ({ displayProject }) => {
   const Projects = useSelector((state) => state.project.projects);
   
   return (
-    <div className='max-w-[1200px] mx-auto p-5 pt-[100px]' id='work'>
+    <div className='max-w-[1200px] mx-auto p-5 my-[100px]' id='work'>
         <div className='pb-8'>
             <p className='text-4xl mb-3 font-bold primary-color'>Work</p>
             <p className='text-gray-400'>Check out some of my recent work</p>

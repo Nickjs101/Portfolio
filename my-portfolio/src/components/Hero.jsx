@@ -14,8 +14,8 @@ const Hero = () => {
     }
     //
   return (
-    <div id='Home' className='bg-secondary-color grid grid-cols-1 lg:grid-cols-3 lg:gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 pt-[80px] md:pt-[100px]'>
-        <div className='bg-gradient-to-r from-slate-900 to-slate-700 col-span-1 my-auto mx-auto h-auto w-[200px] sm:w-[250px] md:w-[400px] lg:w-[400px] rounded-[50%] shadow-lg shadow-[#9fef00be]'>
+    <div id='Home' className='bg-secondary-color grid grid-cols-1 lg:grid-cols-3 lg:gap-8 max-w-[1200px]  md:h-auto lg:h-[50vh] mx-auto py-8 '>
+        <div className='bg-gradient-to-r from-slate-900 to-slate-700 col-span-1 my-auto mx-auto h-auto w-[200px] sm:w-[250px] md:w-[400px] lg:w-[400px] rounded-[50%] shadow-xl'>
             <img className='rounded-[50%]' src={heroimage} alt='Hero Image'/>
         </div>
         <div className='col-span-2 px-5 my-auto'>
@@ -40,10 +40,10 @@ const Hero = () => {
             </p>
 
             <div className='my-8'>
-                <a href={resume} download className='px-6 py-3 w-full rounded-md mr-4 bg-primary-color tertiary-color' >
+                <a href={resume} download className='px-6 py-3 w-full rounded-md mr-4 bg-primary-color text-[#324b00]  hover:border hover:border-[#9fef00be] hover:bg-[#324b0000] hover:text-[#9fef00be]' >
                     Download CV
                 </a>
-                <a onClick={(e) => gotoSection(e, 'contact')} href="#" className='px-6 py-3 w-full rounded-md border border-[#9fef00be] hover:bg-[#A4B1CDff] text-white hover:border-none'>
+                <a onClick={(e) => gotoSection(e, 'contact')} href="#" className='px-6 py-3 w-full rounded-md border border-[#9fef00be] hover:bg-[#A4B1CDff] text-[#9fef00be] hover:text-[#141d2b] hover:border-none'>
                     Contact
                 </a>
             </div>
