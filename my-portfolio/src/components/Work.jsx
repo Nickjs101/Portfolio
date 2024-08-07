@@ -18,12 +18,20 @@ const Work = ({ displayProject }) => {
           <div className='mb-10 w-full text-center text-3xl text-white font-bold'>Software Development</div>
           <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-4 lg:px-[200px]'> {/*Remove padding when element greater than 3*/}
           {Projects[1].SoftwareDev.map((project, index) => (
-            <div className='bg-fourth-color secondary-color mb-2 rounded-xl' >
+            <div key={index} className='bg-fourth-color secondary-color mb-2 rounded-xl' >
               {project.image}
               <div className='p-4'>
                   <h1 className='text-white text-lg'><b>{project.title}</b></h1>
                   <div className=' mb-2 text-white text-sm'><FontAwesomeIcon className='mr-2' size='lg' style={{color: "#74C0FC"}} icon={project.icon}/>{project.type}</div>
-                  <p className='py-2 h-40 secondary-color overflow-hidden'>{project.description}</p>
+                  <p className='my-2 h-20 secondary-color overflow-hidden'>{project.description}</p>
+                  <h2 className="text-md mb-4 text-white">Skills Utilized</h2>
+                  <div className="flex flex-wrap">
+                    {project.skills.map((skill, i) => (
+                      <span key={i} className="bg-secondary-color text-sm secondary-color py-1 px-2 m-1 rounded-full">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 <div className='text-[#9fef00] py-2 hover:text-[#A4B1CDff] cursor-pointer' onClick={() => displayProject(project.component, 'SoftwareDev')}>Read More &#10095;</div>
               </div>
             </div>

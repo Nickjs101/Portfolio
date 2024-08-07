@@ -34,7 +34,7 @@ const Experience = () => {
     {
       swap: true,
       company: 'PC Bytes',
-      position: 'IT Technician',
+      position: 'IT Technician (OJT)',
       date: 'Oct 2018 - Dec 2018',
       tasks: [
         {header: 'Technical Support:',info: 'Provided comprehensive IT support to clients, including hardware troubleshooting, system diagnostics, and software installation.'},
@@ -47,7 +47,7 @@ const Experience = () => {
   ];
 
   return (
-    <div id='Experience' className='max-w-[1200px] mx-auto pb-[100px]'>
+    <div id='Experience' className=' max-w-[1200px] mx-auto pb-[100px]'>
       <div className='primary-color text-4xl font-bold text-center w-full mb-8'>Professional Experience</div>
       
       {myExperiences.map((experience, index) => (
@@ -62,20 +62,20 @@ const Experience = () => {
           </div>
 
           <div className='col-span-4 h-auto py-10'>
-            <div className='bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl flex flex-col h-full items-center'>
+            <div className='bg-secondary-color  border border-[#1A2332ff]  shadow-lg rounded-3xl flex flex-col h-full items-center'>
               <div className='col-span-2 flex justify-center items-center p-3'>
                 <img src={experience.img} alt='Experience' className='w-[250px] object-cover rounded-lg' />
               </div>
               <div className=' w-full secondary-color p-4 col-span-2 flex flex-col justify-between'>
                 <div className='gap-3'>
                   <div className='flex flex-col lg:flex-row justify-between items-center'>
-                    <div className='text-3xl font-bold'>{experience.position}</div>
+                    <div className='text-3xl font-bold text-[#9fef00]'>{experience.position}</div>
                     <div className='text-sm font-bold italic px-2 rounded-full text-center bg-[#a4b1cd47] secondary-color'>{experience.date}</div>
                   </div>
                   <div className='text-lg font-medium mb-5'>{experience.company}</div>
                   <ul className='list-disc list-inside space-y-4'>
                     {experience.tasks.map((task, i) => (
-                      <li key={i} className='text-md'><b className='font-semibold'>{task.header} </b>{task.info}</li>
+                      <li key={i} className='text-md'><b className='font-semibold'>{task.header} </b><span className='italic'>{task.info}</span></li>
                     ))}
                   </ul>
                 </div>
@@ -88,16 +88,16 @@ const Experience = () => {
 
 
         <div className='hidden md:grid w-full h-auto grid-cols-5 items-center px-4'>
-          <div className={`${experience.swap? 'hidden': 'block'} bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl secondary-color p-4 my-16 col-span-2 flex flex-col justify-between`}>
+          <div className={`${experience.swap? 'hidden': 'block'} bg-fourth-color border border-[#1A2332ff]  shadow-lg rounded-3xl secondary-color p-4 my-16 col-span-2 flex flex-col justify-between`}>
             <div className='gap-3'>
               <div className='flex justify-between items-center'>
-                <div className='text-3xl font-bold'>{experience.position}</div>
+                <div className='text-3xl font-bold text-[#9fef00]'>{experience.position}</div>
                 <div className='text-sm font-bold italic px-2 rounded-full text-center bg-[#a4b1cd47] secondary-color'>{experience.date}</div>
               </div>
               <div className='text-lg font-medium mb-3'>{experience.company}</div>
               <ul className='list-disc list-inside space-y-2 font-sans'>
                 {experience.tasks.map((task, i) => (
-                  <li key={i} className='text-md'><b className='font-semibold'>{task.header} </b>{task.info}</li>
+                  <li key={i} className='text-md'><b className='font-semibold'>{task.header} </b><span className='italic'>{task.info}</span></li>
                 ))}
               </ul>
             </div>
@@ -112,16 +112,16 @@ const Experience = () => {
             <div className='w-1 flex-grow bg-primary-color'></div>
           </div>
           
-          <div className={`${experience.swap? 'block': 'hidden'} bg-secondary-color shadow-slate-800 shadow-lg rounded-3xl secondary-color p-4 my-16 col-span-2 flex flex-col justify-between `}>
+          <div className={`${experience.swap? 'block': 'hidden'} bg-fourth-color border border-[#1A2332ff]  shadow-lg rounded-3xl secondary-color p-4 my-16 col-span-2 flex flex-col justify-between `}>
             <div className='gap-3'>
               <div className='flex justify-between items-center'>
-                <div className='text-3xl font-bold'>{experience.position}</div>
+                <div className='text-3xl font-bold text-[#9fef00]'>{experience.position}</div>
                 <div className='text-sm font-bold italic px-2 rounded-full text-center bg-[#a4b1cd47] secondary-color'>{experience.date}</div>
               </div>
               <div className='text-lg font-medium mb-3'>{experience.company}</div>
               <ul className='list-disc list-inside space-y-2 font-sans'>
                 {experience.tasks.map((task, i) => (
-                  <li key={i} className='text-md'><b className='font-semibold'>{task.header} </b>{task.info}</li>
+                  <li key={i} className='text-md'><b className='font-semibold'>{task.header} </b><span className='italic'>{task.info}</span></li>
                 ))}
               </ul>
             </div>
@@ -138,7 +138,7 @@ const Experience = () => {
         <div className='my-10 w-full text-center text-3xl font-bold text-white'>Additional Professional Highlights</div>
 
         <div className='w-full flex flex-wrap justify-evenly gap-4'>
-          <div class="shadow-lg rounded-lg border border-[#A4B1CDff] p-6 max-w-sm">
+          <div class="bg-fourth-color shadow-lg rounded-lg border border-[#A4B1CDff] p-6 max-w-sm">
             <div class="flex items-center mb-4">
                 <div className="bg-tertiary-color rounded-full p-2 w-10 h-10 flex items-center justify-center mr-3">
                   <FontAwesomeIcon icon="fa-solid fa-people-group" />
@@ -150,7 +150,7 @@ const Experience = () => {
             </p>
           </div>
 
-          <div class="shadow-lg rounded-lg border border-[#A4B1CDff] p-6 max-w-sm">
+          <div class="bg-fourth-color shadow-lg rounded-lg border border-[#A4B1CDff] p-6 max-w-sm">
             <div class="flex items-center mb-4">
               <div className="bg-tertiary-color rounded-full p-2 w-10 h-10 flex items-center justify-center mr-3">
                 <FontAwesomeIcon icon="fa-solid fa-book-atlas" />
@@ -162,7 +162,7 @@ const Experience = () => {
             </p>
           </div>
 
-          <div class="shadow-lg rounded-lg border border-[#A4B1CDff] p-6 max-w-sm">
+          <div class="bg-fourth-color shadow-lg rounded-lg border border-[#A4B1CDff] p-6 max-w-sm">
             <div class="flex items-center mb-4">
                 <div className="bg-tertiary-color rounded-full p-2 w-10 h-10 flex items-center justify-center mr-3">
                   <FontAwesomeIcon icon="fa-solid fa-lightbulb" />

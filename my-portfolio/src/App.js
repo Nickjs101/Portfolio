@@ -11,15 +11,15 @@ import Cyberprojects from "./components/Cyberprojects";
 import Education from "./components/Education";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faGoogle, faLinux } from '@fortawesome/free-brands-svg-icons'
-import {  } from '@fortawesome/free-regular-svg-icons'
-import { faCode, faBug, faDatabase, faFlag, faShieldHalved, faPeopleGroup, faLightbulb, faBookAtlas, faShield, faFileCode} from '@fortawesome/free-solid-svg-icons'
+import { faGoogle, faLinux, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { faCode, faBug, faDatabase, faFlag, faShieldHalved, faPeopleGroup, faLightbulb, faBookAtlas, faShield, faFileCode, faDownload} from '@fortawesome/free-solid-svg-icons'
 
 import {Provider} from 'react-redux'
 import projectStorage from './components/subcomponents/projectStorage'
 import { useState, useCallback } from "react";
 
-library.add(faGoogle,faCode,faBug,faLinux,faDatabase,faFlag,faShieldHalved,faPeopleGroup,faLightbulb,faBookAtlas,faShield,faFileCode);
+library.add(faGoogle,faCode,faBug,faLinux,faDatabase,faFlag,faShieldHalved,faPeopleGroup,faLightbulb,faBookAtlas,faShield,faFileCode,faLinkedinIn,faGithub,faEnvelope,faDownload);
 
 function App() {
 

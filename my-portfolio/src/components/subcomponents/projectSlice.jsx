@@ -46,14 +46,14 @@ const initialState = {
                     description: 'To address security controls issues, we need to implement confidentiality of the organization’s assets such as customers’ private data. Implementing data encryption both at rest and in transit should also be considered.', 
                     component: <Project4/>
                 },
-                {
-                    icon: 'fa-brands fa-google', 
-                    image: <FontAwesomeIcon icon="fa-solid fa-shield-halved" style={{color: "A4B1CDff"}} className='h-[100px] w-full my-4' />, 
-                    type: 'Google Cybersecurity Project', 
-                    title: 'Incident Report Analysis', 
-                    description: 'The company recently experienced a DDOS attack that compromised the internal network for two hours until it was resolved. During the attack the organization’s network services suddenly stopped responding due to an incoming flood of ICMP packets. Normal internal network traffic could not access any network resources.', 
-                    component: <Project5/>
-                }
+                // {
+                //     icon: 'fa-brands fa-google', 
+                //     image: <FontAwesomeIcon icon="fa-solid fa-shield-halved" style={{color: "A4B1CDff"}} className='h-[100px] w-full my-4' />, 
+                //     type: 'Google Cybersecurity Project', 
+                //     title: 'Incident Report Analysis', 
+                //     description: 'The company recently experienced a DDOS attack that compromised the internal network for two hours until it was resolved. During the attack the organization’s network services suddenly stopped responding due to an incoming flood of ICMP packets. Normal internal network traffic could not access any network resources.', 
+                //     component: <Project5/>
+                // }
             ]
         },
         {
@@ -66,6 +66,7 @@ const initialState = {
                     type: 'School Project', 
                     title: 'Kody\'s Adventure', 
                     description: 'A 2D side-scrolling game developed in Unity using C# to teach basic Python programming.', 
+                    skills: ["C#", "Unity", "OOP"],
                     component: <AppProject2/>
                 },
                 {
@@ -76,6 +77,7 @@ const initialState = {
                     type: 'Personal Project', 
                     title: 'Trading Journal Mobile App', 
                     description: 'A mobile app for tracking trades with Java, XML, and SQLite, featuring a line graph to display trade performance.', 
+                    skills: ["Java", "XML", "Android Studio", "SQLite"],
                     component: <AppProject1/>
                 }
             ]

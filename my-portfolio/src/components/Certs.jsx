@@ -43,7 +43,7 @@ const Certs = () => {
                       <li
                       key={idx}
                       onClick={() => ChangeImage(idx)}
-                      className={`p-2 rounded-lg hover:bg-gradient-to-r from-[#1A2332ff] to-[#0b121f] transition duration-5000 ease-in-out ${activeCert === idx ? "bg-gradient-to-r from-[#1A2332ff] to-[#0b121f]" : ""}`}
+                      className={`py-2 highlight-effect ${activeCert === idx ? "active-highlight-effect" : ""}`}
                       >
                       {name}
                       </li>

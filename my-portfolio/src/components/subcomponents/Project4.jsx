@@ -7,8 +7,6 @@ const Project4 = () => {
         <h1 className="text-3xl lg:text-5xl font-bold mb-4 text-white rounded-lg">Security Audit Report</h1>
         
         <h2 className="text-xl font-semibold mb-2">Controls Assessment Checklist</h2>
-        
-        <h3 className="text-lg font-semibold mb-2 text-white">Controls and Compliance Checklist Exemplar</h3>
         <p className="mb-4">Select “yes” or “no” to answer the question: Does Botium Toys currently have this control in place?</p>
         
         <h3 className="text-lg font-semibold mb-2 text-white">Controls Assessment Checklist</h3>
@@ -27,7 +25,7 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Least Privilege</td>
               <td className="py-2">Currently, all employees have access to customers' data. Privileges need to be limited to reduce the risk of potential breach.</td>
@@ -37,14 +35,14 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Disaster Recovery Plans</td>
               <td className="py-2">The company has no disaster recovery plans. This needs to be implemented to ensure business continuity.</td>
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -57,14 +55,14 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Separation of Duties</td>
               <td className="py-2">This needs to be implemented to reduce the possible illegal access to critical data since most of the access to critical data runs by the company CEO.</td>
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -77,7 +75,7 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Intrusion Detection System (IDS)</td>
               <td className="py-2">There is no intrusion detection system installed. This needs to be installed to monitor potential security breach in the company systems.</td>
@@ -87,14 +85,14 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Backups</td>
               <td className="py-2">The company needs to have backups of critical data to ensure business continuity in case of security breach.</td>
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -107,7 +105,7 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Manual Monitoring, Maintenance, and Intervention for Legacy Systems</td>
               <td className="py-2">Currently there is no regular schedule for monitoring and maintenance of legacy systems and there is no clear intervention method to be used. These need to be implemented to properly secure and reduce potential breach in these systems.</td>
@@ -117,7 +115,7 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Encryption</td>
               <td className="py-2">Encryption is not currently used. Implementing this feature could improve the confidentiality of customer information.</td>
@@ -127,14 +125,14 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Password Management System</td>
               <td className="py-2">There is no password management system that reduces the productivity of employees and vendors where they can recover and reset a password instead of submitting a ticket to the IT department.</td>
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -144,7 +142,7 @@ const Project4 = () => {
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -154,7 +152,7 @@ const Project4 = () => {
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -184,14 +182,14 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">The organization maintains a secure network to store cardholder data.</td>
               <td className="py-2">The company does not secure customers’ credit card information and is not encrypted.</td>
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -201,7 +199,7 @@ const Project4 = () => {
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -214,7 +212,7 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Vulnerability scans are regularly performed.</td>
               <td className="py-2">The company does not have vulnerability scans regularly performed to identify potential security gaps.</td>
@@ -224,7 +222,7 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Maintain and regularly update the system’s antivirus software.</td>
               <td className="py-2">The company’s antivirus is not updated regularly which makes the system vulnerable.</td>
@@ -234,7 +232,7 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Track and monitor access to network resources and cardholder data.</td>
               <td className="py-2">The company does not have an active monitoring and tracking system.</td>
@@ -244,7 +242,7 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Maintain an information security policy.</td>
               <td className="py-2">The company does not have an information security policy established.</td>
@@ -254,7 +252,7 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">The company’s password policy does not require secure password requirements.</td>
               <td className="py-2">The company’s password policy does not require secure password requirements.</td>
@@ -278,14 +276,14 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">E.U. customers’ data is kept private/secured.</td>
               <td className="py-2">All employees have access to customers data and credit card information is not encrypted.</td>
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -295,7 +293,7 @@ const Project4 = () => {
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -305,7 +303,7 @@ const Project4 = () => {
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -332,7 +330,7 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">User access policies are established.</td>
               <td className="py-2">The company does not establish user access policies which gives high risk of potential access to critical data.</td>
@@ -342,14 +340,14 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Sensitive data (PII/SPII) is confidential/private.</td>
               <td className="py-2">All employees have access to sensitive data.</td>
             </tr>
             <tr>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">
                 <input type="checkbox" disabled />
@@ -362,7 +360,7 @@ const Project4 = () => {
                 <input type="checkbox" disabled />
               </td>
               <td className="py-2">
-                <input type="checkbox" disabled checked />
+                <input type="checkbox" disabled checked class="form-checkbox text-green-500"/>
               </td>
               <td className="py-2">Data is available to individuals authorized to access it.</td>
               <td className="py-2">Data is available to all employees.</td>
