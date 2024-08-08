@@ -2,7 +2,6 @@ import React from "react";
 import gradpic from '../assets/gradpic.JPG'
 import org from '../assets/org.jpg'
 import comp from '../assets/comp.jpg'
-import { GrApple } from "react-icons/gr";
 
 const Education = () => {
     return (

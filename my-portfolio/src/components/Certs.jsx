@@ -27,10 +27,10 @@ const Certs = () => {
   };
 
   const PrevCert = () => {
-    ChangeImage(activeCert == 0? certNames.length - 1: activeCert - 1 );
+    ChangeImage(activeCert === 0? certNames.length - 1: activeCert - 1 );
   };
   const NextCert = () => {
-    ChangeImage(activeCert == certNames.length - 1? 0: activeCert + 1 );
+    ChangeImage(activeCert === certNames.length - 1? 0: activeCert + 1 );
   };
 
   return (

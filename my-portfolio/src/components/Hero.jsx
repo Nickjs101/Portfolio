@@ -2,7 +2,7 @@ import React from 'react'
 import heroimage from '../assets/Profilepic.png'
 import resume from '../assets/NICK_JOSHUA_MONTEMAYOR_RESUME.pdf'
 import {TypeAnimation} from 'react-type-animation'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const Hero = () => {

@@ -34,7 +34,7 @@ function App() {
   }, []);
 
   const renderContent = useCallback(() => {
-    if (currentContent == 'Projects') {
+    if (currentContent === 'Projects') {
       return (
         <Provider store={projectStorage}>
           <Cyberprojects  projectComponent={projectComponent} category={projectCategory} setprojectComponent={setprojectComponent} setprojectCategory={setprojectCategory} setCurrentContent={setCurrentContent} />

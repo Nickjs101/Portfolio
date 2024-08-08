@@ -1,5 +1,5 @@
-import React, {useEffect, useState, useMemo, Component} from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import React, {useEffect, useState, useMemo} from 'react'
+import { useSelector } from 'react-redux'
 // import { addProject } from './subcomponents/projectSlice'
 import Sidebar from './subcomponents/Sidebar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
